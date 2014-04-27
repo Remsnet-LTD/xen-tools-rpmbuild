@@ -1,16 +1,19 @@
 rinse
 =====
 
-RPMbuild project for http://www.steve.org.uk/Software/rinse/
+RPMbuild project for:
+
+- rinse ( http://www.steve.org.uk/Software/rinse/)
+- xen-shelll ( http://xen-tools.org/software/xen-tools/ )
+- xen-tools http://xen-tools.org/software/xen-tools/
 
 
-When it comes that you do automated minimal OS deploys, 
-the tool rinse been one of  the  tools for that.
+When it comes that you do scripted automated minimal OS deploys, 
+the tools rinse with xen-tools been one of  the  tools for that.
+
 This don´t require X11 or VNC at all.
 
 On Xen together with the latest xen-tools , this makes the admin live simpler.
-
-
 
 
 usage see  Web-references :
