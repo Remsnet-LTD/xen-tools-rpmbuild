@@ -1,0 +1,18 @@
+--- Makefile.orig       2008-11-30 16:59:47.000000000 +0000
++++ Makefile    2014-04-27 21:14:31.914672413 +0000
+@@ -50,14 +50,12 @@
+
+
+ makemanpages: clean
+-       cd bin; for i in *-*; do pod2man --release=${VERSION} --official --section=1 $$i ../man/$$i.man; done
+-
++       pod2man --release=${VERSION} bin/xen-shell >man/xen-shell.man
+
+
+ manpages: makemanpages
+        for i in man/*.man; do file=`basename $$i .man` ; cp $$i /usr/share/man/man1/$$file.1; done
+        for i in /usr/share/man/man1/*.1; do gzip -f -9 $$i; done
+-       rm /usr/share/man/man1/xen-add-user.1.gz
+
+ #
+ #  Make a new release tarball.
