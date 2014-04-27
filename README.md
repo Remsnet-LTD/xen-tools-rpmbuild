@@ -12,7 +12,8 @@ When it comes that you do scripted automated minimal OS deploys,
 the tools rinse with xen-tools been one of  the  tools for that.
 
 Most OS depend tools require an GUI  / Xterm .
-most of them , i.e  autoyast , satelite-server , yast-vm, yast-dirinstall are allmost overkill  for AUTOMATED simple minimalistic imageing. 
+most of them , i.e  autoyast , satelite-server , yast-vm, yast-dirinstall, fai and some more
+are allmost overkill  for AUTOMATED simple minimalistic imageing. 
 
 rinse  don´t require X11 or VNC at all.
 
