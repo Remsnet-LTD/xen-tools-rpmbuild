@@ -26,7 +26,7 @@ Release: %{prelease}
 License: GPLv2
 Group: System Tools
 Source0: rinse-%{version}.tar.gz
-Packager: Jimmy Tang <jtang@tchpc.tcd.ie>
+Packager:       Horst Venzke <horst.venzke@remsnet.de>
 
 Vendor: http://xen-tools.org/software/rinse
 URL: http://xen-tools.org/software/rinse
