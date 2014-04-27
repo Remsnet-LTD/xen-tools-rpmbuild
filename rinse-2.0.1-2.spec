@@ -94,6 +94,9 @@ Xen guests.
 %config(missingok,noreplace) %{_sysconfdir}/rinse/rinse.conf
 %{_sysconfdir}/rinse/slc-5.packages
 %{_sysconfdir}/rinse/slc-6.packages
+%{_mandir}/man8/%{name}*
+
+%defattr(755,root,root,0755)
 %{_libdir}/rinse/centos-4/post-install.sh
 %{_libdir}/rinse/centos-5/post-install.sh
 %{_libdir}/rinse/centos-6/post-install.sh
@@ -117,7 +120,6 @@ Xen guests.
 %{_libdir}/rinse/slc-5/post-install.sh
 %{_libdir}/rinse/slc-6/post-install.sh
 %{_sbindir}/rinse
-%{_mandir}/man8/%{name}*
 
 
 %changelog
