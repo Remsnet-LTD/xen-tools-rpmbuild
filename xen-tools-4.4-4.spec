@@ -32,7 +32,7 @@ Requires:       coreutils
 Requires:       perl >= 5.8.0
 Requires:       perl(Text::Template)
 Requires:       perl(Config::IniFiles)
-Requires:       perl(Expect
+Requires:       perl(Expect::Simple)  perl(Expect)
 Requires:       perl(Getopt::Long)
 Requires:       perl(LWP::UserAgent)
 Requires:       perl(Pod::Usage)
