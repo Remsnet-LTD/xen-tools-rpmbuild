@@ -1,4 +1,3 @@
-
 rinse, xen-shell, xen-tools, rpmstrap, debootstrap, fakerooot
 
 =====
@@ -37,7 +36,21 @@ Depend Software :
 
 - phyton 
 - coreutils
-- perl & some perl modules
+- perl => 5.8
+- some CPAN perl modules ( install from rpm or CPAN )
+     perl(Config::IniFiles)
+     perl (Text::Template)
+     perl(Text::Template)
+     perl(Config::IniFiles)
+     perl(Expect)
+     perl(Getopt::Long)
+     perl(LWP::UserAgent)
+     perl(Pod::Usage)
+     perl(File::Basename)
+     perl(File::Find)
+     perl(File::Path)
+
 - sharutils
 - libacl
 - glibc
+- makedev
