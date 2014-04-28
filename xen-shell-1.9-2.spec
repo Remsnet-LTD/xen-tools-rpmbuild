@@ -28,6 +28,10 @@ Patch:          %{name}.Makefile.patch
 
 BuildArch:      noarch
 Requires:       perl
+Requires:       perl(File::Basename)
+Requires:       perl(File::Find)
+Requires:       perl(File::Path)
+Requires:       xen
 AutoReqProv:    no
 
 %description
