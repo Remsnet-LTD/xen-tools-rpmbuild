@@ -1,0 +1,13 @@
+--- debootstrap.orig/Makefile
++++ debootstrap/Makefile
+@@ -34,7 +34,9 @@ devices.tar.gz:
+        mkdir -p dev
+        chown 0:0 dev
+        chmod 755 dev
+-       (cd dev && $(MAKEDEV) std ptmx fd consoleonly)
++       $(MAKEDEV) -d dev std ptmx fd
++       $(MAKEDEV) -d dev -x console
++       mknod dev/console c 5 1
+        tar cf - dev | gzip -9 >devices.tar.gz
+        @if [ "$$(tar tvf devices.tar.gz | wc -l)" -lt 2 ]; then \
+                echo " ** devices.tar.gz is empty!" >&2; \
