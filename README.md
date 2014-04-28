@@ -42,7 +42,7 @@ Depend Software :
      perl (Text::Template)
      perl(Text::Template)
      perl(Config::IniFiles)
-     perl(Expect)
+     perl(Expect) perl(Expect::Simple)
      perl(Getopt::Long)
      perl(LWP::UserAgent)
      perl(Pod::Usage)
