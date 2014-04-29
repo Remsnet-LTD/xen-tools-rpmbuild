@@ -25,11 +25,16 @@ On Xen together with the latest xen-tools , this makes the admin live simpler.
 
 
 usage see  Web-references :
-http://blog.xen.org/index.php/2012/08/31/xen-tools-a-straightforward-vm-provisioninginstallation-tool/
+http://wiki.centos.org/HowTos/Xen/Xen4QuickStart<br>
+http://blog.xen.org/index.php/2012/08/31/xen-tools-a-straightforward-vm-provisioninginstallation-tool/<p>
 
-http://forum.slicehost.com/index.php?p=/discussion/690/howto-install-centos-5-to-a-slice/p1
-http://www.steve.org.uk/Software/rinse/
-http://manpages.debian.org/cgi-bin/man.cgi?query=xen-create-image&apropos=0&sektion=0&manpath=Debian+6.0+squeeze&format=html&locale=en
+http://www.raskas.be/blog/howtos/centos-base-image/<br>
+http://forum.slicehost.com/index.php?p=/discussion/690/howto-install-centos-5-to-a-slice/p1<br>
+http://www.steve.org.uk/Software/rinse/<br>
+http://manpages.debian.org/cgi-bin/man.cgi?query=xen-create-image&apropos=0&sektion=0&manpath=Debian+6.0+squeeze&format=html&locale=en<br>
+http://grantmcwilliams.com/item/538-centos-6-virtual-machine-64-bit-installation-on-xen<br>
+http://wejn.org/stuff/how-to-boot-via-pygrub-on-lenny.html#6f318909c4c3e7e3364d1ecd26143baf<br>
+http://wiki.centos.org/TipsAndTricks/CreateNewInitrd<br>
 
 
 Depend Software :
