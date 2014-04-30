@@ -1,0 +1,58 @@
+! /bin/sh
+#
+# License LGPLv2
+# Vendor : xen-tools comunity, http://www.xen-tools.org/
+
+# /etc/init.d/xen-loopdevs
+#
+# System startup script for the xen-loopdevs
+#
+### BEGIN INIT INFO
+# Provides:       xen-loopdevs
+# Required-Start: $remote_fs $syslog $time
+# Should-Start:   $network smtp
+# Required-Stop:  $remote_fs $syslog
+# Should-Stop:    $network smtp
+# Default-Start:  2 3 5
+# Default-Stop:   0 1 6
+# Short-Description: Cron job service
+# Description:    Cron job service
+### END INIT INFO
+
+
+function mk_loop_devs {
+
+
+echo " creating 255 loop devs "
+#
+for i in $(seq 8 255) ;  do mknod /dev/loop$i b 7 $i ;done
+chmod 664 /dev/loop*
+chown 0.disk /dev/loop*
+echo ""
+echo "done"
+
+}
+
+function check_loop_devs {
+
+echo " calcutaling current loop devs count:"
+LOOP_COUNT=ls /dev/loop* | wc -l
+echo "LOOP_COUNT =" $LOOP_COUNT
+}
+
+
+case "$1" in
+    start|create)
+        mk_loop_devs
+        #
+        check_loop_devs
+        ;;
+    check|probe)
+        check_loop_devs
+        ;;
+    *)
+        echo "Usage: $0 {start|create|probe|check}"
+        exit 1
+        ;;
+esac
+exit 1
