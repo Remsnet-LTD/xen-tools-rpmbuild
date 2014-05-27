@@ -16,17 +16,19 @@
 
 Name:           xen-tools
 Version:        4.4
-Release:        4
+Release:        5
 Summary:        Scripts used to create new Xen domains
 Packager:       Horst Venzke <horst.venzke@remsnet.de>
 Group:          Applications/Emulators
 License:        GPLv2 or Artistic
-URL:            http://xen-tools.org/software/xen-tools/
+URL:            https://github.com/remsnet/xen-tools
 Source0:        http://xen-tools.org/software/xen-tools/xen-tools-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 Requires:       xen => 3.5
 Requires:       rpmstrap
+Requires:       rinse
+Requires:       python >= 2.5
 Requires:       bash
 Requires:       coreutils
 Requires:       perl >= 5.8.0
@@ -120,6 +122,11 @@ test "%{buildroot}" != "/" && %__rm -rf "%{buildroot}"
 
 
 %changelog
+* Tue May 27 2014 support@remsnet.de -r5
+- added centos 6.5 support, completed rewrite the centos6.0 hooks
+- forked xen-tools https://github.com/remsnet/xen-tools , 
+- xen-tool patches provited by private email to xen-tools to current maintainer Axel beckert.
+
 * Mon Apr 28 2014 support@remsnet.de -r4
 - updated Requires perl modules
 - added Requires xen, bash,
