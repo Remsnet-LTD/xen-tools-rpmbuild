@@ -6,7 +6,7 @@ RPMbuild project for:
 
 - rinse ( http://www.steve.org.uk/Software/rinse/)
 - xen-shell ( http://xen-tools.org/software/xen-tools/ )
-- xen-tools ( http://xen-tools.org/software/xen-tools/ )
+- xen-tools ( https://github.com/remsnet/xen-tools ) - localy FORKED  and updated.
 - rpmstrap ( https://github.com/blipvert/rpmstrap )
 - debootstrap ( https://wiki.debian.org/de/Debootstrap )
 - fakerooot ( https://wiki.debian.org/FakeRoot )
