@@ -41,6 +41,8 @@ Requires:       perl(Pod::Usage)
 Requires:       perl(File::Basename)
 Requires:       perl(File::Find)
 Requires:       perl(File::Path)
+Requires:       perl(Data::Validate:URI)
+Requires:       perl(Term::UI)
 AutoReqProv:    no
 Provides:       xen-tools
 
