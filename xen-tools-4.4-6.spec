@@ -129,6 +129,9 @@ test "%{buildroot}" != "/" && %__rm -rf "%{buildroot}"
 
 
 %changelog
+* Sat Jul  5 2014 support@remsnet.de -r6
+- add perl Digest-SHA, Digest-MD5
+
 * Tue May 27 2014 support@remsnet.de -r5
 - added centos 6.5 support, completed rewrite the centos6.0 hooks
 - forked xen-tools https://github.com/remsnet/xen-tools , 
