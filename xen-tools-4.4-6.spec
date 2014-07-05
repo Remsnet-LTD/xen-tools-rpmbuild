@@ -16,7 +16,7 @@
 
 Name:           xen-tools
 Version:        4.4
-Release:        5
+Release:        6
 Summary:        Scripts used to create new Xen domains
 Packager:       Horst Venzke <horst.venzke@remsnet.de>
 Group:          Applications/Emulators
@@ -43,6 +43,11 @@ Requires:       perl(File::Find)
 Requires:       perl(File::Path)
 Requires:       perl(Data::Validate:URI)
 Requires:       perl(Term::UI)
+#
+#--hash_method
+Requires:       perl(Digest::SHA)
+Requires:       perl(Digest::MD5)
+#
 AutoReqProv:    no
 Provides:       xen-tools
 
