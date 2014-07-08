@@ -43,6 +43,7 @@ Requires:       perl(File::Find)
 Requires:       perl(File::Path)
 Requires:       perl(Data::Validate:URI)
 Requires:       perl(Term::UI)
+Requires:       perl(IPC::Cmd)
 #
 #--hash_method
 Requires:       perl(Digest::SHA)
