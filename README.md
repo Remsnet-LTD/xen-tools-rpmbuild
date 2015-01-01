@@ -42,7 +42,7 @@ http://wiki.centos.org/TipsAndTricks/CreateNewInitrd<br>
 
 Depend Software :
 
-- pyhton 
+- python 
 - coreutils
 - perl => 5.8
 - some CPAN perl modules ( install from rpm or CPAN )
