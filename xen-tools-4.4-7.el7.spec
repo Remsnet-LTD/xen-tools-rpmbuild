@@ -40,6 +40,9 @@ Requires:       perl-Time-HiRes perl-local-lib perl-homedir perl-Encode-Locale
 Requires:       perl-Text-Template
 Requires:       perl-Config-IniFiles
 Requires:       perl-Expect
+Requires:       perl-Env
+Requires:       perl-File-Which
+Requires:       perl-File-Slurp
 Requires:       perl-Term-UI
 Requires:       perl-IPC-Cmd
 Requires:       perl-Pod-Usage
