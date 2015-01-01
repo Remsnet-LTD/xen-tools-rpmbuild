@@ -1,4 +1,5 @@
-rinse, xen-shell, xen-tools, rpmstrap, debootstrap, fakerooot
+rinse, xen-shell, xen-tools, rpmstrap, debootstrap, fakerooot, sanlock, 
+kernel-xen-el7, xen44-el7 
 
 =====
 
@@ -10,7 +11,9 @@ RPMbuild project for:
 - rpmstrap ( https://github.com/blipvert/rpmstrap )
 - debootstrap ( https://wiki.debian.org/de/Debootstrap )
 - fakerooot ( https://wiki.debian.org/FakeRoot )
-
+- xen44-el7  ( http://xen.crc.id.au/ ) - rebuild Stevens latest "xen44-4.4" el6 srpm for el7
+- kernel-xen-el7 (  http://xen.crc.id.au/ ) - rebuild Stevens latest  "kernel-xen-3" el6 srpm for el7
+- sanlock.el7 (  http://xen.crc.id.au/ ) - rebuild Stevens sanlock for el7
 
 When it comes that you do scripted automated minimal OS provisioning & installation, 
 the tools rinse with xen-tools been one of  the  tools for that.
@@ -39,7 +42,7 @@ http://wiki.centos.org/TipsAndTricks/CreateNewInitrd<br>
 
 Depend Software :
 
-- phyton 
+- pyhton 
 - coreutils
 - perl => 5.8
 - some CPAN perl modules ( install from rpm or CPAN )
